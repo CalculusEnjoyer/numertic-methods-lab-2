@@ -12,7 +12,6 @@ public class Jacobi {
     public static void main(String[] args) {
         System.out.println("\n\nМетод Якобі:");
         calculateJacobi();
-        calculateNumberOf();
     }
 
     private static void calculateJacobi() {
@@ -121,17 +120,6 @@ public class Jacobi {
                 det += Math.pow(-1, j) * A[0][j] * determinant(minor(A, 0, j));
             }
             return det;
-        }
-    }
-
-
-    private static void showMatrixP() {
-        System.out.println("Матриця перестановок P");
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                System.out.print(P[i][j] + " ");
-            }
-            System.out.println();
         }
     }
 
